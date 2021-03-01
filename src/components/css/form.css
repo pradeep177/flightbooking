@@ -1,0 +1,86 @@
+body{
+    height: 38rem;
+    background: linear-gradient(
+45deg
+, black, transparent);
+}
+
+form {
+    display: grid;
+    align-items: center;
+    grid-gap: 12%;
+    
+}
+
+#form {
+    background: darkviolet;
+    width: fit-content;
+    height: 30rem;
+    padding: 28px;
+}
+
+label {
+    font-size: 19px;
+}
+
+.input{
+    width:10rem;
+    height:100%;
+    border-radius: 5%;
+    border: outset;
+}
+
+.button {
+      background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.display {
+    border: 1px solid black;
+    background:springgreen;
+    margin: 4px;
+    position: relative;
+    bottom:538px;
+    width: fit-content;
+    left: 50%;
+    padding: 3%;
+    padding-right: 1%;
+}
+#departure{
+    display: grid;
+}
+div#return-date {
+    display: grid;
+}
+h1.data-info {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    background: greenyellow;
+    padding: 15px;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 870px) {
+    .display {
+        position: relative;
+        left: -4px;
+        top: 167px;
+    }
+    h1.data-info {
+        position: absolute;
+        top: 474px;
+    }
+ 
+}
+
+
