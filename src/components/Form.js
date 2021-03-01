@@ -52,15 +52,9 @@ const Form = () => {
 
     const filterData = () => {
         const {origin, destination, passengers} = details;
-        console.log(origin)
-        console.log(destination)
-        console.log(startDate)
-        console.log(returnDate)
-        console.log(passengers)
-        console.log(volume)
          const filteredData = data.filter(item => {
-             return item.origin === origin && 
-                    item.destination === destination &&
+             return item.origin === origin.toLowerCase() && 
+                    item.destination === destination.toLowerCase() &&
                     item.departureDateTime.slice(0, 11) === startDate.toString().slice(4, 15) &&
                     item.returnDateTime.slice(0, 11) === returnDate.toString().slice(4, 15) &&
                     item.availableCapacity > passengers
