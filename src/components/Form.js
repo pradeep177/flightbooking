@@ -53,10 +53,10 @@ const Form = () => {
     const filterData = () => {
         const {origin, destination, passengers} = details;
          const filteredData = data.filter(item => {
-             return item.origin === origin.toLowerCase() && 
-                    item.destination === destination.toLowerCase() &&
-                    item.departureDateTime.slice(0, 11) === startDate.toString().slice(4, 15) &&
-                    item.returnDateTime.slice(0, 11) === returnDate.toString().slice(4, 15) &&
+             return item.origin === origin.toLowerCase() || 
+                    item.destination === destination.toLowerCase() ||
+                    item.departureDateTime.slice(0, 11) === startDate.toString().slice(4, 15) ||
+                    item.returnDateTime.slice(0, 11) === returnDate.toString().slice(4, 15) ||
                     item.availableCapacity > passengers
         })
         setdata(filteredData)
